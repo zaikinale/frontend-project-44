@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/frontend-project-44",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "[![Actions Status](https://github.com/zaikinale/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zaikinale/frontend-project-44/actions)",
   "main": "index.js",
   "type": "module",
@@ -11,5 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
