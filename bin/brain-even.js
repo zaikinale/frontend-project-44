@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
 
@@ -17,7 +16,7 @@ while (correctAnswersCount < 3) {
 
     if (userAnswer === correctAnswer) {
     console.log('Correct!');
-    correctAnswersCount++;
+    correctAnswersCount+=1;
     } else {
         console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
         console.log(`Let's try again, ${name}!`);
