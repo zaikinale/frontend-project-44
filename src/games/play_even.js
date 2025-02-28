@@ -1,6 +1,3 @@
-// brain-even.js
-import runGame from '../index.js';
-
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const generateQuestion = () => {
