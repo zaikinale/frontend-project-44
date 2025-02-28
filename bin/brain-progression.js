@@ -1,3 +1,4 @@
+// Сделать только вызов игры
 import readlineSync from 'readline-sync';
 
 const generateProgression = (start, step, length) => {
