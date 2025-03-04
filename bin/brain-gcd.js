@@ -1,4 +1,2 @@
-import runGame from '../src/index.js';
-import { description, generateQuestion } from '../src/games/play_gcd.js';
-
-runGame(description, generateQuestion);
+import { gameGcd } from '../src/games/play_gcd.js'
+gameGcd()
