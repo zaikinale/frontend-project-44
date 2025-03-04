@@ -15,7 +15,6 @@ export const gameProgression = () => {
         return hiddenProgression.join(' ');
     };
     
-    
     const generateQuestion = () => {
         const start = Math.floor(Math.random() * 10) + 1;
         const step = Math.floor(Math.random() * 10) + 1;
