@@ -1,6 +1,7 @@
 import runGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
+
 export const gameProgression = () => {
     const generateProgression = (start, step, length) => {
         const progression = [];
@@ -25,5 +26,5 @@ export const gameProgression = () => {
         const correctAnswer = progression[hiddenIndex].toString();
         return [question, correctAnswer];
     };  
-    return runGame(description, generateQuestion)
+    return runGame(description, generateQuestion);
 }
