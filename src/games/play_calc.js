@@ -22,4 +22,3 @@ export const gameCalc = () => {
 
     return runGame(description, generateQuestion);
 }
-gameCalc()

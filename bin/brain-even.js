@@ -1,4 +1,2 @@
-import runGame from '../src/index.js';
-import { description, generateQuestion } from '../src/games/play_even.js';
-
-runGame(description, generateQuestion);
+import { gameEven } from '../src/games/play_even.js'
+gameEven()
