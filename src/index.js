@@ -1,7 +1,4 @@
-// Общая логика игр
-// Функция должна принимать описание игры и массив раундов сгенерированных в games
 
-// index.js
 import readlineSync from 'readline-sync';
 
 const runGame = (description, generateQuestion) => {
@@ -24,7 +21,7 @@ const runGame = (description, generateQuestion) => {
         } else {
             console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
             console.log(`Let's try again, ${name}!`);
-            break; // Завершаем игру при ошибке
+            break; 
         }
     }
 
