@@ -9,14 +9,24 @@ import pluginJs from "@eslint/js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({baseDirectory: __dirname, recommendedConfig: pluginJs.configs.recommended});
+import importPlugin from 'eslint-plugin-import';
 
 export default [
-  pluginJs.configs.recommended,
-  { languageOptions: { globals: globals.browser } },
-  ...compat.extends('airbnb-base'),
+  {files: ["**/*.js"], languageOptions: {sourceType: "script"}},
+  {
+    languageOptions: { globals: globals.node },
+    plugins: { import: importPlugin, fp },
+  },
+  ...compat.extends("airbnb-base"),
   {
     rules: {
-      "no-console": "off", 
-    },
-  },
+      "no-console": "off",
+      "import/extensions": [
+        "error",
+        {
+          js: "always",
+        },
+      ],
+    }
+  }
 ];

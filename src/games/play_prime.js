@@ -2,7 +2,7 @@ import runGame from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export const gamePrime = () => {
+const gamePrime = () => {
   const isPrime = (num) => {
     if (num < 2) return false;
     for (let i = 2; i <= Math.sqrt(num); i += 1) {
@@ -18,3 +18,5 @@ export const gamePrime = () => {
   };
   return runGame(description, generateQuestion);
 };
+
+export default gamePrime;

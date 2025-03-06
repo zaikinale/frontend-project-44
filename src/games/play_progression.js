@@ -2,7 +2,7 @@ import runGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-export const gameProgression = () => {
+const gameProgression = () => {
   const generateProgression = (start, step, length) => {
     const progression = [];
     for (let i = 0; i < length; i += 1) {
@@ -28,3 +28,5 @@ export const gameProgression = () => {
   };
   return runGame(description, generateQuestion);
 };
+
+export default gameProgression;

@@ -1,6 +1,6 @@
 import runGame from '../index.js';
 
-export const gameGcd = () => {
+const gameGcd = () => {
   const gcd = (a, b) => {
     let num1 = a;
     let num2 = b;
@@ -24,3 +24,5 @@ export const gameGcd = () => {
   };
   return runGame(description, generateQuestion);
 };
+
+export default gameGcd;
