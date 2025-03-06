@@ -13,25 +13,10 @@ const compat = new FlatCompat({baseDirectory: __dirname, recommendedConfig: plug
 export default [
   pluginJs.configs.recommended,
   { languageOptions: { globals: globals.browser } },
-  ...compat.extends("airbnb"),
+  ...compat.extends('airbnb-base'),
   {
     rules: {
       "no-console": "off", 
-      
     },
   },
 ];
-
-
-// import globals from "globals";
-// import pluginJs from "@eslint/js";
-// import tseslint from "typescript-eslint";
-
-
-// /** @type {import('eslint').Linter.Config[]} */
-// export default [
-//   {files: ["**/*.{js,mjs,cjs,ts}"]},
-//   {languageOptions: { globals: globals.browser }},
-//   pluginJs.configs.recommended,
-//   ...tseslint.configs.recommended,
-// ];
