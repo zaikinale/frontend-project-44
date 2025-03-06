@@ -1,3 +1,0 @@
-{"version": 2, "width": 102, "height": 22, "timestamp": 1740818311, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
-[0.031664, "o", "\r\nThe default interactive shell is now zsh.\r\nTo update your account to use zsh, please run `chsh -s /bin/zsh`.\r\nFor more details, please visit https://support.apple.com/kb/HT208050.\r\n"]
-[0.037349, "o", "\u001b[?1034hbash-3.2$ "]
