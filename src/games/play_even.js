@@ -1,6 +1,7 @@
 import runGame from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const gameEven = () => {
   const generateQuestion = () => {
     const questionNumber = Math.floor(Math.random() * 100) + 1;
